@@ -23,7 +23,6 @@ public class ConstructorDemo {
   //    c1.setCustomerName(name);
   //     c1.setCustomerCity(city);
       System.out.println(c1);
-      
 	}
 
 }
