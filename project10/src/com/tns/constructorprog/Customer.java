@@ -1,35 +1,42 @@
 package com.tns.constructorprog;
-
+//program to demonstrate constructors
 public class Customer {
-      private String customerName;
-      private int customerId;
-      private String customerCity;
-      //default constructor
-      public Customer() {
-    	  System.out.println("default");
-      }
-      //parameterised constructor
-      public Customer(String customerName,int customerId,String customerCity) {
-    	  
-    	  this.customerName = customerName;
-    	  this.customerId = customerId;
-    	  this.customerCity = customerCity; 
-      }
+
+	private String customerName;
+	private int customerId;
+	private String customerCity;
+	//Default Constructor
+	public Customer() {
+		System.out.println("default constructor");
+	}
+//parameterized constructor
+	public Customer(String customerName, int customerId, String customerCity) {
+		super();
+		this.customerName = customerName;
+		this.customerId = customerId;
+		this.customerCity = customerCity;
+	}
+	
 	public String getCustomerName() {
 		return customerName;
 	}
+
 	public void setCustomerName(String customerName) {
 		this.customerName = customerName;
 	}
+
 	public int getCustomerId() {
 		return customerId;
 	}
+
 	public void setCustomerId(int customerId) {
 		this.customerId = customerId;
 	}
+
 	public String getCustomerCity() {
 		return customerCity;
 	}
+
 	public void setCustomerCity(String customerCity) {
 		this.customerCity = customerCity;
 	}
@@ -38,5 +45,7 @@ public class Customer {
 		return "Customer [customerName=" + customerName + ", customerId=" + customerId + ", customerCity="
 				+ customerCity + "]";
 	}
-      
+	
+	
+	
 }
